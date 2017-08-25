@@ -19,7 +19,18 @@ func slice2() {
 	fmt.Println("x[:5] ->", x[:5])
 	fmt.Println("x[:] ->", x[:])
 }
+
+func stringSlice() {
+	s := make([]string, 3, 10)
+	fmt.Println("string slice made is: ", s)
+	s[0] = "a"
+	s[2] = "b"
+	s = append(s, "c", "d")
+	fmt.Println(s)
+}
+
 func main() {
-	slice1()
-	slice2()
+	// slice1()
+	// slice2()
+	stringSlice()
 }
